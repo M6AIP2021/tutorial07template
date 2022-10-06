@@ -9,7 +9,7 @@ import random
 import bisect
 
 
-class TestExercise3_4_1_1:
+class TestExercise3_2_1_1:
 
     def test_no_for(self):
         if any(isinstance(node, ast.For) for node in ast.walk(ast.parse(inspect.getsource(recursive_polynomial)))):
@@ -35,7 +35,7 @@ class TestExercise3_4_1_1:
 
 # No need to change these tests.
 
-class TestExercise3_4_2_1:
+class TestExercise3_2_2_1:
 
     def test_no_for(self):
         if (any(isinstance(node, ast.For) for node in ast.walk(ast.parse(inspect.getsource(index_bisect))))):
@@ -62,7 +62,7 @@ class TestExercise3_4_2_1:
                         some_value, some_randoms, result, expected))
 
 
-class TestExercise3_4_3_2:
+class TestExercise3_2_3_2:
 
     def test_no_for(self):
         if (any(isinstance(node, ast.For) for node in ast.walk(ast.parse(inspect.getsource(neg_pos))))):
@@ -93,7 +93,7 @@ class TestExercise3_4_3_2:
                         a_list, result, expected))
 
 
-class TestExercise3_4_4_1:
+class TestExercise3_2_4_1:
 
     def test_lucas(self):
         for n, f_n, steps_n in [(5, 11, 4),
